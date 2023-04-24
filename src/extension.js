@@ -58,6 +58,11 @@ let OSKIndicator = GObject.registerClass(
       this.connect("touch-event", function () {
         toggleOSK();
       });
+      
+      settings.connect("changed::toggle", function () {
+        toggleOSK();
+        settings.set_boolean('toggle', false);
+      });
     }
   }
 );
