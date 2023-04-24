@@ -61,7 +61,6 @@ let OSKIndicator = GObject.registerClass(
       
       settings.connect("changed::toggle", function () {
         toggleOSK();
-        settings.set_boolean('toggle', false);
       });
     }
   }
