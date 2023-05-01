@@ -58,10 +58,6 @@ let OSKIndicator = GObject.registerClass(
       this.connect("touch-event", function () {
         toggleOSK();
       });
-      
-      settings.connect("changed::toggle", function () {
-        toggleOSK();
-      });
     }
   }
 );
@@ -393,6 +389,10 @@ function enable() {
   Main.layoutManager.addTopChrome(Main.layoutManager.keyboardBox, {
     affectsStruts: settings.get_boolean("resize-desktop"),
     trackFullscreen: false,
+  });
+  
+  settings.connect("changed::toggle", function () {
+    toggleOSK();
   });
 }
 
