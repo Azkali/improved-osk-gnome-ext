@@ -3,7 +3,7 @@
 Makes Gnome's OnScreen Keyboard more usable.
 
 Features:
-* Includes additional buttons: Arrow keys, Esc, Tab, Ctrl, Alt, F1-12
+* Includes additional buttons: Arrow keys, Esc, Tab, Ctrl, Alt, Super, F1-12
 * Supports key combinations like `Ctrl + C`, `Alt + Tab`, `Ctrl + Shift + C`, etc.
 * Configurable keyboard size (landscape/portrait)
 * Statusbar indicator to toggle keyboard
@@ -119,3 +119,7 @@ uses `ibus` package, make sure you have it installed.
 ### Some symbols are missing...
 The keyboard uses unicode characters, try installing `ttf-symbola` on archlinux (AUR)
 or `ttf-ancient-fonts-symbola` on ubuntu/debian
+
+## Alternatives
+### [GJS OSK](https://extensions.gnome.org/extension/5949/gjs-osk/)
+Full-size Onscreen Keyboard than can be dragged around the screen.
